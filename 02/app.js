@@ -23,7 +23,6 @@ for(i = 0; i < list.length; i++){
 	//[i]は１ずつ増加する
 	console.log(list[i].href);
 }
-//
 
 //イベントハンドラーやるよ
 //コードが開始される瞬間のことを発火って言うんだって
@@ -80,7 +79,7 @@ document.addEventListener('DOMContentLoaded', function(){
 		//urlという変数を作成、HTML内の#urlを取得
 		let url = document.getElementById('url');
 		//siteという変数を作成、HTML内の#siteを取得
-		let site = document.getElementById('saite');
+		let site = document.getElementById('site');
 		//必要なタグを生成し、変数に格納
 		//createElementで任意の新しいタグを作成
 		//anchorという変数を作成、aタグを新たに作成
@@ -90,7 +89,7 @@ document.addEventListener('DOMContentLoaded', function(){
 		anchor.href = url.value;
 		//createTextNodeで新たにテキストノードを作成する
 		//テキストという変数を作成、HTML内に新しくsite.valueのテキストを作成
-		let text = document.createTextNode('site.value');
+		let text = document.createTextNode(site.value);
 		//anchor(新しく作成したaタグ)の子要素にtext(site.valueの中身をテキスト化したもの)を作成する。
 		anchor.appendChild(text);
 		//console.log(url.value);
@@ -105,8 +104,8 @@ document.addEventListener('DOMContentLoaded', function(){
 		//anchorの子要素にbrを追加
 		anchor.appendChild(br);
 	});
-	//削除ボタンつくって、追加したanchorを１つずつ削除できるようにする。
-	//HTML内の#deletebtnを取得、クリックされたらイベント発火
+		//削除ボタンつくって、追加したanchorを１つずつ削除できるようにする。
+		//HTML内の#deletebtnを取得、クリックされたらイベント発火
 	document.getElementById('deletebtn').addEventListener('click', function(){
 		//発火内容
 		//console.log(list.length)でlist(aタグ)の数を表示

@@ -1,5 +1,6 @@
 // コメントアウト
 
+//console.logでコンソールのログにコメントを残す
 console.log('--------------consolelog----------------');
 
 console.log('hoge');
@@ -22,18 +23,22 @@ console.log('------------変数-------------')
 //2同じ値を繰り返し使える
 //3値の値がわかりやすい
 
+//nameという変数を作り、text'はしもと'をいれる
 let name = 'はしもと';
 
+//コンソールにlogでname(はしもと)を表示
 console.log(name);
 
 
-
+//numという変数を作成、中に２をいれる
 let num = 2;
-
+//コンソールにnum(2)を表示
 console.log(num);
 
+//num = num(2) + 2となるように指定する
 num = num + 2;
 
+//コンソールにnum(num + 2)の結果を表示
 console.log(num);
 
 
