@@ -102,15 +102,17 @@ document.addEventListener('DOMContentLoaded', function(){
 		//brという変数を作成、新しくbrタグを作成する
 		let br = document.createElement('br');
 		//anchorの子要素にbrを追加
-		anchor.appendChild(br);
+		list.appendChild(br);
 	});
 		//削除ボタンつくって、追加したanchorを１つずつ削除できるようにする。
+		//id取得して、clickしたときに処理できるようにする。
 		//HTML内の#deletebtnを取得、クリックされたらイベント発火
-	document.getElementById('deletebtn').addEventListener('click', function(){
-		//発火内容
-		//console.log(list.length)でlist(aタグ)の数を表示
-		//5からボタンの追加が始まってたので、list５番目の要素を削除
-		(list[5]).remove();
+	document.getElementById('delbtn').addEventListener('click', function(){
+		//発火内容：リストの子要素に対して削除命令
+		//listはローカル変数なのでもう一度idを取得する
+		//ここではlistはaddbuttonのローカル変数なので、宣言し直し
+		let list = document.getElementById('list');
+		list.removeChild(list.firstChild);
 	});
 });
 
