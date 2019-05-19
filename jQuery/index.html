@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="jn">
+<head>
+	<meta charset="UTF-8">
+	<title>jQuery練習</title>
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/style.css">
+
+	<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+
+</head>
+<body class="container">
+	<div class="q-box">
+		<h2>クリックで要素のサイズを変える</h2>
+		<p class="description">クリックして、ボタンのサイズを変更する。(toggleじゃない)</p>
+		<div class="btn-wrapper">
+			<div id="js-click-btn" class="btn">ボタン</div>
+		</div>
+	</div>
+
+	<div class="q-box">
+		<h2>ホバーで透明度を変更する</h2>
+		<p class="description">ホバーで要素の透明度を変更する</p>
+		<div class="btn-wrapper">
+			<div id="js-hover-btn" class="btn">ボタン</div>
+		</div>
+	</div>
+
+	<div class="q-box">
+		<h2>クリックで要素の表示非表示を切り替える</h2>
+		<p class="description">ECサイト等で、ユーザーが商品の詳細を見たいときだけ表示するときとかにつかえる</p>
+		<div class="btn-wrapper">
+			<div id="js-show-btn" class="btn">表示</div>
+			<div id="js-hide-btn" class="btn">非表示</div>
+			<div class="box-wrapper">
+				<div id="js-target-element" class="box">これが消えるよ
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="q-box">
+		<h2>要素の追加</h2>
+		<p class="description">画面をリロードせずにコメント表示するときとかに使える(SNSとか)ただ、保存して表示するには、Ajaxという技術と組み合わせる必要あり</p>
+		<div class="btn-wrapper">
+			<li id="js-add-btn" class="btn">追加</li>
+			<li id="js-add-btn2" class="btn">追加２</li>
+		</div>
+	</div>
+
+	<div class="q-box">
+		<h2>toggle処理</h2>
+		<p class="description">アコーディオンメニューなどに使える</p>
+		<div class="toggle-menu">
+			<dt class="js-toggle">ポケモン</dt>
+			<dd>ピカチュウ</dd>
+			<dd>ヤドン</dd>
+			<dd>カビゴン</dd>
+			<dd>メタモン</dd>
+			<dd>リザードン</dd>
+		</div>
+	</div>
+
+	<div class="q-box">
+		<h2>ハンバーガー</h2>
+		<p class="description">ヘッダーのレスポンシブなどに！(アニメーションはcss)</p>
+		<div id="toggle" class="js-hamburger hamburger">
+			<span></span>
+		</div>
+	</div>
+
+	<div class="q-box">
+		<h2>スムーズスクロール</h2>
+		<p class="description">ページTOPに戻るときとか、ページ内遷移のアニメーションにも使える</p>
+		<div class="btn-wrapper">
+			<div class="btn js-scroll">ボタン</div>
+		</div>
+	</div>
+
+	<div class="q-box">
+		<h2>モーダル</h2>
+		<p class="description">注意事項の表示とか</p>
+		<div class="btn-wrapper modal-wrapper">
+			<div class="btn js-modal">ボタン</div>
+				<div class="modal-content">
+					<div class="modal-close js-modal-close">
+						<span>×</span>
+					</div>
+					<p>モーダル</p>
+				</div>
+			<div id="modal-bg" class="js-modal-close"></div>
+		</div>
+	</div>
+
+	<div class="q-box">
+		<h2>タブメニュー</h2>
+		<p class="description">ニュースのようにジャンルごとにタブで分けて表示したいときに使える</p>
+		<ul class="tab-nav">
+			<li><a href="#tab01" class="active">HTML</a></li>
+			<li><a href="#tab02">CSS</a></li>
+			<li><a href="#tab03">JavaScript</a></li>
+		</ul>
+		<div class="clearfix"></div>
+
+			<div class="tab-content">
+				<div id="tab01" class="active">
+					 いっこめ ipsum dolor sit amet, consectetur adipisicing elit. Unde veniam qui assumenda dolor rerum, tenetur, quam voluptatibus vitae perspiciatis inventore similique, omnis eligendi tempora eius distinctio vel ducimus delectus labore.
+				</div>
+				<div id="tab02">
+					にこめ Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque deserunt excepturi commodi provident quos, at iste iusto, minus libero impedit placeat debitis ullam similique ea quibusdam maxime dignissimos! Blanditiis, repellendus!
+				</div>
+				<div id="tab03">
+					さんこめ Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit qui atque, quia inventore. Est, iure alias inventore ullam incidunt quam nostrum consequuntur quo. Dolor enim sunt possimus delectus, illo? Laudantium.
+				</div>
+			</div>
+		</div>
+
+			<div class="q-box">
+				<h2>スライダー</h2>
+				<p class="description">ファーストビューとかによく使われる</p>
+
+				<div class="slider">
+					<div class="slide-wrapper">
+						<div class="slide">
+							<span class="slide-text">1</span>
+						</div>
+						<div class="slide">
+							<span class="slide-text">2</span>
+						</div>
+						<div class="slide">
+							<span class="slide-text">3</span>
+						</div>
+						<div class="slide">
+							<span class="slide-text">4</span>
+						</div>
+						<div class="slide">
+							<span class="slide-text">5(last)</span>
+						</div>
+					</div>
+					
+					<span class="prev-slider"><</span>
+					<span class="next-slider">></span>
+				</div>
+
+			</div>
+				<div class="q-box">
+					<div class="slide-wrapper2">
+						<div class="slide2">
+							<span class="slide-text2">1</span>
+						</div>
+						<div class="slide2">
+							<span class="slide-text2">2</span>
+						</div>
+						<div class="slide2">
+							<span class="slide-text2">3</span>
+						</div>
+						<div class="slide2">
+							<span class="slide-text2">4</span>
+						</div>
+						<div class="slide2">
+							<span class="slide-text2">5(last)</span>
+						</div>
+					</div>
+
+	</div>
+	<!-- 先にjQueryを読み込まないと$マークとか使えないぞ -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="jQuery/app.js"></script>
+
+	<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+				
+
+
+</body>
+</html>
